@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #f0f0f0; 
+    --text-color: #000; 
+    --background-color: #fff; 
+    --highlight-color: #007bff; 
+    --about-box-color: #e8e8e8; 
+    --contact-background-color: #fff; 
+    --contact-text-color: #000; 
+}
+
+body.dark-mode {
+    --primary-color: #333; 
+    --text-color: #f0f0f0;
+    --background-color: #222; 
+    --highlight-color: #ff5722; 
+    --about-box-color: #444; 
+    --contact-background-color: #444; 
+    --contact-text-color: #f0f0f0; 
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}

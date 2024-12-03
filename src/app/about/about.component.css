@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+#about {
+  background: linear-gradient(135deg, #f3e7fe, #e3fdfd);
+  border-radius: 15px;
+  padding: 60px 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #c8e1ff, #ffc7c7, #ffe8a2);
+  z-index: -1;
+  animation: rotateBg 8s linear infinite;
+}
+
+@keyframes rotateBg {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+#about h2 {
+  font-size: 2.8rem;
+  color: #ff6f61;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6f61, #ffc371);
+}
+
+.about-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  border: 8px solid #ff6f61;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 25px rgba(255, 111, 97, 0.5);
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-content p:hover {
+  color: #ff6f61;
+  transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+  .about-box {
+      flex-direction: column;
+  }
+
+  .about-img img {
+      margin-bottom: 20px;
+  }
+}

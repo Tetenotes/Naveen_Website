@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+#contact {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #673ab7;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #673ab7, #03a9f4);
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-box {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-box a {
+    color: #03a9f4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: #673ab7;
+    text-shadow: 0 2px 5px rgba(103, 58, 183, 0.5);
+}
+
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-box {
+        font-size: 1rem;
+    }
+}

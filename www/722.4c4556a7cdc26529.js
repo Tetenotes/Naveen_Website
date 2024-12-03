@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[722],{722:(o,t,e)=>{e.r(t),e.d(t,{MotionWeb:()=>n});var i=e(83);class n extends i.E_{constructor(){super(),this.registerWindowListener("devicemotion","accel"),this.registerWindowListener("deviceorientation","orientation")}}}}]);
